@@ -72,14 +72,17 @@ h6 {
     font-size:18px;
 }
 
+/*จัดข้อมูลคอลัมน์ขวา*/
 .colmain {
   margin-left: 60px;
 }
 
+/*จัดคอลัมน์ซ้าย*/
 .box {
   margin-left: 60px;
 }
 
+/*จัดหัวข้อคอลัมน์ขวา*/
 .box1 {
   margin-left: 60px;
 }
