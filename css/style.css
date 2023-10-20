@@ -1,0 +1,232 @@
+/*จัดตำแหน่งและ Font ใน body*/
+body {
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*เปลี่ยน background เป็นโหมดกลางวัน*/
+.Day {
+  background-image: url('White\ Background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(20px);  
+  -webkit-backdrop-filter:blur(20px);
+  background-size: cover;
+}
+
+/*เปลี่ยน background เป็นโหมดคืน*/
+.Night {
+  background-image: url('Black\ Background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(20px);  
+  -webkit-backdrop-filter:blur(20px);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+/*จัดการ Font h1*/
+h1 {
+    color: rgb(190, 14, 49);
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+  }
+
+/*จัด Font h2*/
+h2 {
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+  }
+
+/*จัด Font h3*/
+h3 {
+	margin: auto;
+	font-family: "Open Sans";
+	  -webkit-text-fill-color: rgb(169, 12, 43); 
+	  -webkit-text-stroke-width: 1px;
+	  -webkit-text-stroke-color:  rgb(190, 14, 49);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+ 
+/*จัด Font h5*/
+h5 {
+  font-size: 13px;
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+}  
+
+/*จัด Font h6*/
+h6 {
+  font-size: 12px;
+  font-family: 'Kanit', sans-serif;
+  margin: 0;
+  padding: 0;
+}  
+
+/*จัด Font ในแถบ Navbar*/
+.navbar-nav {
+    font-size:18px;
+}
+
+/*จัดตำแหน่งของรูป*/
+.flexmain {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around; /*จัดตำแหน่งให้เว้นหางกันพอดี*/
+}
+
+/*จัดตำแหน่งของbutton*/
+.flexbutton {
+   display: flex;
+   flex-flow: row nowrap; /*จัดตำแหน่งแกนนอน ถ้าเกินจะขึ้นบรรทัดใหม่*/
+  justify-content: center;
+}
+
+/*จัดสีและขนาดปุ่ม*/
+.btn{
+    background-color: rgb(30, 30, 26);
+    width:130px;
+    height:40px;
+}
+
+/*จัดสีปุ่มตอน mouseover*/
+.btn:hover{
+    background-color: rgb(91, 174, 247);
+}
+
+/*จัดความกว้างและความเร็วในการขยายรูป*/
+.Expandimage {
+  width: 140px;
+  transition: transform 0.5s; /* เวลายิ่งน้อยยิ่งเร็ว */
+}
+
+
+/*จัดตำแหน่งและสี Animation คลื่น */
+.waveheader {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgb(54, 108, 204) 0%, rgb(104, 159, 255) 100%);
+}
+
+/*จัดขนาด Animation คลื่น */
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:150px;
+}
+
+/*การเคลื่อนที่ของ Animation คลื่น */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/*จัดตำแหน่งของ CV*/
+.backgroundcv {
+  display: flex; /* เปิดใช้งาน Flexbox */
+  justify-content: center; /* จัดการแกนแนวนอน */
+  padding-bottom: 50px;
+}
+
+/*จัดขนาดของและขอบเส้น CV*/
+.cv {
+    width: 180mm; 
+    height: 220mm; 
+    margin: 20px;
+    box-sizing: border-box; /*Fix ขนาดให้เป็นตามที่กำหนด*/
+    border: 1px solid #ccc; 
+    display: flex; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+/*จัดตำแหน่งและสีของ CV ฝั่งซ้าย*/
+.left-column {
+    padding: 20px;
+    border: 2px solid black;
+    background-color: rgb(125, 188, 255);
+    color: black;
+}
+
+/*จัดตำแหน่งและสีของ CV ฝั่งขวา*/
+.right-column {
+    padding: 30px;
+    border: 2px solid black;
+    border-left: 1px solid rgb(0, 0, 0); 
+    background-color: white;
+    color: black;
+}
+
+.line {
+  border: 2px solid white;
+}
+
+.line1 {
+  border: 2px solid black;
+}
+
+/*ปรับขนาดถ้าต่ำกว่า 1024px*/
+@media (max-width: 1024px) {
+  
+  /*จัดคอลัมน์ซ้ายให้อยู่ตรงกลาง*/
+  .box {
+   display: flex ; 
+   align-self: center;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+}
+
+/*ปรับขนาดถ้าต่ำกว่า 768px*/
+@media (max-width: 768px) {
+  .waves {
+    height:50px;
+    min-height:40px;
+  }
+}
+
+/*ปรับขนาดถ้าต่ำกว่า 576px*/
+@media (max-width: 576px) {
+  .right-column {
+    padding: 20px;
+    border: 2px solid black;
+    border-top: 1px solid black;  
+  }
+
+  /*จัดคอลัมน์ซ้ายให้อยู่ตรงกลาง*/
+  .box1 {
+    display: flex ; 
+    justify-content: center;
+   }
+}
+
