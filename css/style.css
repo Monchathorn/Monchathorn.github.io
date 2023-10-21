@@ -44,9 +44,20 @@ h2 {
 h3 {
 	margin: auto;
 	font-family: "Open Sans";
-	  -webkit-text-fill-color: rgb(169, 12, 43); 
+	  -webkit-text-fill-color: rgb(255, 0, 51); 
 	  -webkit-text-stroke-width: 1px;
-	  -webkit-text-stroke-color:  rgb(190, 14, 49);
+	  -webkit-text-stroke-color:  rgb(255, 0, 51);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/*จัด Font h4*/
+h4 {
+	margin: auto;
+	font-family: "Open Sans";
+	  -webkit-text-fill-color: rgb(255, 0, 0); 
+	  -webkit-text-stroke-width: 1px;
+	  -webkit-text-stroke-color:  rgb(255, 0, 0);
     font-size: 20px;
     padding-bottom: 10px;
 }
@@ -189,8 +200,8 @@ h6 {
 .left-column {
     padding: 20px;
     border: 2px solid black;
-    background-color: rgb(125, 188, 255);
-    color: black;
+    background-color: rgb(29, 35, 213);
+    color: rgb(255, 255, 255);
 }
 
 /*จัดตำแหน่งและสีของ CV ฝั่งขวา*/
