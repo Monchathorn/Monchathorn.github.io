@@ -46,7 +46,7 @@ h3 {
 	font-family: "Open Sans";
 	  -webkit-text-fill-color: rgb(255, 0, 51); 
 	  -webkit-text-stroke-width: 1px;
-	  -webkit-text-stroke-color:  rgb(255, 0, 51);
+	  -webkit-text-stroke-color:  rgb(201, 0, 0);
     font-size: 20px;
     padding-bottom: 10px;
 }
@@ -57,7 +57,7 @@ h4 {
 	font-family: "Open Sans";
 	  -webkit-text-fill-color: rgb(255, 0, 0); 
 	  -webkit-text-stroke-width: 1px;
-	  -webkit-text-stroke-color:  rgb(255, 0, 0);
+	  -webkit-text-stroke-color:  rgb(201, 0, 0);
     font-size: 20px;
     padding-bottom: 10px;
 }
